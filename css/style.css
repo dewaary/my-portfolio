@@ -1290,4 +1290,33 @@ input[type="text"] {
   opacity: 0;
 }
 
+.custom-bullet-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.custom-bullet-list li i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #3498db;
+}
+
+.more-content {
+  display: none;
+}
+
+.work1 {
+  background-size: contain; /* Membuat gambar sesuai proporsi tanpa dipotong */
+  background-position: center center; /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  height: 150px; /* Mengatur tinggi elemen untuk memperkecil ukuran gambar */
+  width: 150px; /* Mengatur lebar elemen untuk memperkecil ukuran gambar */
+  display: inline-block; /* Membuat gambar tetap di dalam area elemen */
+}
+
 /*# sourceMappingURL=style.css.map */
