@@ -1319,4 +1319,52 @@ input[type="text"] {
   display: inline-block; /* Membuat gambar tetap di dalam area elemen */
 }
 
+/* Timeline Semua di Kanan - versi rapat */
+/*  */
+
+.clean-timeline:before {
+  display: none; /* non-aktifkan garis vertikal */
+}
+
+/* sembunyikan badge/ikon bila ada */
+.clean-timeline .timeline-badge {
+  display: none;
+}
+
+.timeline > li > .timeline-panel {
+  width: 88%;              /* dari 85% → sedikit lebih lebar */
+  float: right;
+  text-align: left;
+  margin-left: 20px;       /* jarak panel ke garis (lebih kecil = lebih rapat) */
+  padding: 20px 25px;      /* padding dalam panel */
+}
+
+.timeline > li > .timeline-badge {
+  left: 25px; /* geser ikon sedikit biar sejajar dengan garis */
+}
+
+.timeline > li {
+  margin-bottom: 35px; /* sedikit dikurangi agar lebih kompak */
+}
+
+/* Efek halus */
+.timeline-panel {
+  transition: all 0.25s ease-in-out;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.timeline-panel:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.timeline-body b {
+  font-family: 'Arial Black', sans-serif;
+  font-weight: 900;
+  color: #000;
+}
+
+
 /*# sourceMappingURL=style.css.map */
